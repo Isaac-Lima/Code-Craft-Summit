@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeCraft - Summit 2025
 
-## Getting Started
+Este projeto foi realizado a fim de estudar o framework de React.js, o Next.js. A aplicação consiste em simular um evento feito por e para pessoas desenvolvedoras apaixonadas por criar soluções inovadoras e compartilhar conhecimento.
 
-First, run the development server:
+## ⚙ Tecnologias utilizadas
 
-```bash
+Para o desenvolvimento do projeto essas são as tecnologias:
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Requisitos para executar o projeto
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (recomendado: LTS)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+## Instalação
+
+1. Clone o repositório:
+
+   ```sh
+   git clone https://github.com/Isaac-Lima/devStage.git
+   cd devStage
+   ```
+
+2. Instale as dependências do Next.js:
+
+   Se estiver usando `npm`:
+
+   ```sh
+   npm install next react react-dom
+   ```
+
+   Se estiver usando `yarn`:
+
+   ```sh
+   yarn add next react react-dom
+   ```
+
+3. Instale o Tailwind CSS e suas dependências:
+
+   ```sh
+   npm install -D tailwindcss postcss autoprefixer
+   ```
+
+   ou
+
+   ```sh
+   yarn add -D tailwindcss postcss autoprefixer
+   ```
+
+4. Inicialize o Tailwind CSS:
+
+   ```sh
+   npx tailwindcss init -p
+   ```
+
+   Isso criará um arquivo `tailwind.config.js` e um arquivo `postcss.config.js`.
+
+## Execução do projeto
+
+Para iniciar o servidor de desenvolvimento, execute:
+
+Se estiver usando `npm`:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se estiver usando `yarn`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+yarn dev
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto estará disponível em `http://localhost:3000/`.
