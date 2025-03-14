@@ -1,4 +1,4 @@
-import { getSubscriberInviteClicks, getSubscriberRankingPosition } from '@/http/api'
+import { getSubscriberInviteClicks, getSubscriberInviteCount, getSubscriberRankingPosition } from '@/http/api'
 import { BadgeCheck, Medal, MousePointerClick } from 'lucide-react'
 
 interface StatsProps{
@@ -8,7 +8,7 @@ interface StatsProps{
 export async function Stats({ subscriberId }: StatsProps){
 
     const { count: acessCount } = await getSubscriberInviteClicks(subscriberId)
-    const { count: inviteCount } = await getSubscriberInviteClicks(subscriberId)
+    const { count: inviteCount } = await getSubscriberInviteCount(subscriberId)
     const { position: rankingPositition } = await getSubscriberRankingPosition(subscriberId)
 
     return(
